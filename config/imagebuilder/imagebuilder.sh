@@ -200,7 +200,7 @@ rebuild_firmware() {
         "
 
     # Rebuild firmware
-    make image PROFILE="" PACKAGES="${my_packages}" FILES="files"
+    make image PROFILE="" FILES="files"
 
     sync && sleep 3
     echo -e "${INFO} [ ${openwrt_dir}/bin/targets/*/*/ ] directory status: \n$(ls -lh bin/targets/*/*/ 2>/dev/null)"
